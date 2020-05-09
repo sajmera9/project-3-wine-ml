@@ -3,6 +3,28 @@
 
 ![Google Slides Presentation](https://docs.google.com/presentation/d/1N-f0Op63flI7O2gbPgGN0Pstkd7OkGQKAus4lXZFlB0/edit?usp=sharing)
 
-![Trip Duration vs Age Group](Images/1-Trip-duration-vs-Age-group.png)
+![Tableau Public Link](https://public.tableau.com/profile/kenneth.tanaka#!/vizhome/Project3_15887384141130/Sheet1?publish=yes)
 
-**Visualization 2**
+
+## Wine Machine Learning Project
+
+**Background** - Ken
+
+
+
+**About the Dataset** - Ken
+
+
+
+
+**Models** - Ken
+
+
+
+
+
+**Random Forest Classifier** - Satvik 
+
+
+
+**Conclusion** - Satvik 
