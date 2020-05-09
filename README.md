@@ -56,12 +56,11 @@ Random Forest : 68%
 
 We were able to achieve the highest accuracy using random forest. Next we applied feature engineering to random forest to try and achieve a higher accuracy.
 
+**Random Forest Classifier**
+We had to consider the unequal number of white and red wines in the dataset, when preprocessing the data. Therefore, we decided trying to take into account normalized data in our model. How did we normalize the data? For all our test we used an 80/20 train/test split and our n_estimators = 100. For an experiment, we took a random sample of 1599 white wines to match the 1599 red wines called `balanced data`. Unfortunately our accuracy score was actually lower (64%) than the `unbalanced data` (4898 white wines, 1599 red wines). Additionally, adding color as a feature to the model for both the unbalanced and balanced data was insignificant to the Random Forest model. Therefore, color does not affect quality scores and improve the accuracy of our models. 
+Finally, we decided to further feature engineer by binning quality scores in a number of different ways. Using the `Three Bins` experiment, quality scores range from 3 to 4, 5 to 6, and 7 to 9 and are binned as Terrible (1), Mediocre (2), and Great (3). This result in the highest accuracy at 85%. In the `Four Bins` experiment, the quality scores range from 3 to 4, 5,  6, and 7 to 9 and our scores are Terrible (1), Mediocre (2), Good (3) and Great(4). This resulted in a 68% accuracy. Lastly, `Balanced Bins` used same quality scores as `Three Bins`, however, each bins consisted of number of wines matching the terrible(1) bin. This resulted in a 67% accuracy. (Check slides 14-16 in Wine Presentation for more details).
 
 
+**Conclusion** 
 
-
-**Random Forest Classifier** - Satvik 
-
-
-
-**Conclusion** - Satvik 
+In all, we found that most important feature for the wine dataset which determines quality is alcohol percentage. Consistently for all our models the alcohol percentage was at least a 12 percent important feature in the Random Forest Classifier. Furthermore, everyone other feature was almost as important. No featured were less than 7 percent in feature importance of all the 11 features. This means that all our inputs were almost equally important in our models. This posed a challenge when feature engineering because we could not simply drop certain features, since they maybe improving the accuracy of quality in some way.
